@@ -1,10 +1,10 @@
 const url = "https://pokeapi.co/api/v2/pokemon/";
 
-let serchId = "";
 const renderPokemon = document.getElementById("render-pokemon");
 const form = document.getElementById("form");
 const btn = document.getElementById("btn");
 const idInput = document.getElementById("pokemon-input");
+let searchId = "";
 
 const checkIdInput = () => {
   let valid = false;
@@ -45,16 +45,16 @@ form.addEventListener("submit", (e) => {
 
   let isIdValid = checkIdInput();
   if (isIdValid) {
-    serchId = url + idPokemon;
-    traerPokemon(serchId);
+    searchId = url + idPokemon;
+    traerPokemon(searchId);
   } else {
     hidePokemonCard();
   }
 });
 
-const traerPokemon = async (serchId) => {
+const traerPokemon = async (searchId) => {
   try {
-    const res = await fetch(`${serchId}`);
+    const res = await fetch(`${searchId}`);
     const data = await res.json();
     infoPokemon = data;
     return showPokemonCard(infoPokemon);
@@ -94,4 +94,6 @@ const showPokemonCard = (infoPokemon) => {
   renderPokemon.innerHTML = renderPokemonCard(infoPokemon);
 };
 
-const hidePokemonCard = () => (renderPokemon.innerHTML = "");
+const hidePokemonCard = () => {
+    renderPokemon.innerHTML = "";
+}
