@@ -1,0 +1,107 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/wp5456980-pokemon-map-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.center-flex{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-card{
+    width: 300px;
+    height: 300px;
+    background-color:#e1d6c989;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container-all{
+    padding: 40px 50px;
+    background-color: #f0e9e17b;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    border-radius: 9px;
+    box-shadow: 4px 5px 12px -1px rgba(66,51,51,0.88);
+    -webkit-box-shadow: 4px 5px 12px -1px rgba(66,51,51,0.88);
+    -moz-box-shadow: 4px 5px 12px -1px rgba(66,51,51,0.88);
+}
+
+.name-pokemon{
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 22px;
+    color: #35383a;
+    text-transform: uppercase;
+    
+}
+
+.data-pokemon{
+    margin-top: 5px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #35383a;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pokemon-image{
+    width: 160px;
+    height: 200px;
+}
+
+#btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+#btn-delete{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+#pokemon-input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
